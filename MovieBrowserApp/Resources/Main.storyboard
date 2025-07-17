@@ -1,0 +1,38 @@
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES">
+    <scenes>
+        <!-- Navigation Controller -->
+        <scene sceneID="nav-scene">
+            <objects>
+                <navigationController id="nav-controller" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nav-bar"/>
+                    <connections>
+                        <segue destination="movie-list-vc" kind="relationship" relationship="rootViewController" id="nav-segue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nav-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!-- Movie List View Controller -->
+        <scene sceneID="movie-list-scene">
+            <objects>
+                <viewController id="movie-list-vc" customClass="MovieListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="movie-list-view">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="movie-table">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movies"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="movie-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
